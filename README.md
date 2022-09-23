@@ -44,10 +44,10 @@ print("Hello World!")
 ![изображение](https://user-images.githubusercontent.com/114138439/191996598-f1c5d347-7ada-402b-aa2b-26e283d58cbe.png)
 
 Unity:
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-```
 public class HelloWorld : MonoBehaviour
 {
     // Start is called before the first frame update
