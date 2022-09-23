@@ -47,7 +47,7 @@ Unity:
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+```
 public class HelloWorld : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -62,6 +62,7 @@ public class HelloWorld : MonoBehaviour
         
     }
 }
+```
 ![изображение](https://user-images.githubusercontent.com/114138439/191997041-45e8f9a7-b072-40ef-a20e-5f6e5292b6e4.png)
 
 ## Задание 2
