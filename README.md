@@ -159,41 +159,26 @@ plt.plot(x, prediction)
 
 
 ## Задание 3
+### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+Зависимости величины loss от исходных данных a,b не наблюдается, однако величина loss стремится к нулю при увеличении количества итераций. 
+На скриншотах можно увидеть значения величины loss при 5 и 1000 итерациях.
+![изображение](https://user-images.githubusercontent.com/114138439/192513623-f24934fa-1393-4ad7-8f65-8978eebc33e3.png)
+![изображение](https://user-images.githubusercontent.com/114138439/192513556-244a0fa6-41f2-4dc9-8875-d7f1dc67eda1.png)
+
+
+
 ### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
+
+Параметр Lr отвечает за шаг измерения, при котором происходит снижение значения функции потерь. Если проверять роль параметра Lr на большом значении, то результат очень расплывчат и выводы сделать трудно. 
+Что можем наблюдать при различных малых значениях Lr:
 ![изображение](https://user-images.githubusercontent.com/114138439/192356210-c9908832-e0d0-495f-a0e1-62ecaf6cde88.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/192355561-fe8ead55-9782-420f-a7e6-bb8a540774b1.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/192355688-4da07df5-a172-422d-894f-2e5831f2910f.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/192355930-0bca41a2-17a9-4066-b66c-b92b8006fa39.png)
 
-
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
-
 ## Выводы
 
-Абзац умных слов о том, что было сделано и что было узнано.
+В процессе лабораторной работы я познакомилась с основными операторами языка Python на примере реализации линейной регрессии, научилась выводить на консоль сообщения в Unity, ознакомилась с процессом работы в среде Google Colab.
 
 | Plugin | README |
 | ------ | ------ |
@@ -203,7 +188,3 @@ oEditor.CreateSphere(
 | OneDrive | [plugins/onedrive/README.md][PlOd] |
 | Medium | [plugins/medium/README.md][PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
-## Powered by
-
-**BigDigital Team: Denisov | Fadeev | Panov**
