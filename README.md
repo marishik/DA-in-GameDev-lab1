@@ -73,6 +73,8 @@ Google Sheets:
 
 ![изображение](https://user-images.githubusercontent.com/114138439/194693633-cff2620f-7a53-461e-aa83-771e7ac7286a.png)
 
+Значения в выводе PyCharm и в записи Google Sheets совпадают.
+
 Проект в Unity и начало работы в VS Code:
 
 ![изображение](https://user-images.githubusercontent.com/114138439/194693654-0c0576c7-c380-4ee3-a499-0864b75b5610.png)
