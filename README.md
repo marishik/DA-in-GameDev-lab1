@@ -48,6 +48,7 @@
 ```
 import gspread
 import numpy as np
+
 gc = gspread.service_account(filename = 'unityda-lr-eeb54da1f951.json')
 sh = gc.open('UnitySheets')
 price = np.random.randint(2000, 10000, 11)
@@ -69,9 +70,11 @@ while i <= len(mon):
 ![изображение](https://user-images.githubusercontent.com/114138439/194693609-5d92b346-b074-45c3-ab4d-4efa9680f655.png)
 
 Google Sheets:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/194693633-cff2620f-7a53-461e-aa83-771e7ac7286a.png)
 
 Проект в Unity и начало работы в VS Code:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/194693654-0c0576c7-c380-4ee3-a499-0864b75b5610.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/194693658-2937ab64-4298-4011-bbd5-7bc967c31046.png)
 
@@ -173,7 +176,7 @@ public class NewBehaviourScript : MonoBehaviour
 
 
 ## Задание 2
-Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1. 
+# Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1. 
 
 
 
