@@ -92,7 +92,7 @@ public class NewBehaviourScript : MonoBehaviour
     public AudioClip normalSpeak;
     public AudioClip badSpeak;
     private AudioSource selectAudio;
-    private Dictionary<string, float> dataSet = new Dictionary<string, float>();
+    private Dictionary<string,float> dataSet = new Dictionary<string, float>();
     private bool statusStart = false;
     private int i = 1;
 
@@ -112,7 +112,6 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         if (dataSet["Mon_" + i.ToString()] > 10 & dataSet["Mon_" + i.ToString()] < 100 & statusStart == false & i != dataSet.Count)
-        
         {
             StartCoroutine(PlaySelectAudioNormal());
             Debug.Log(dataSet["Mon_" + i.ToString()]);
@@ -133,11 +132,10 @@ public class NewBehaviourScript : MonoBehaviour
         var rawJson = JSON.Parse(rawResp);
         foreach (var itemRawJson in rawJson["values"])
         {
-            var ParseJson  = JSON.Parse(itemRawJson.ToString());
-            var selectRaw = ParseJson[0].AsStringList;
-            dataSet.Add(("Mon_" + selectRaw[0]), float.Parse(selectRaw[2]));
+            var parseJson = JSON.Parse(itemRawJson.ToString());
+            var selectRow = parseJson[0].AsStringList;
+            dataSet.Add(("Mon_" + selectRow[0]), float.Parse(selectRow[2]));
         }
-        
     }
 
     IEnumerator PlaySelectAudioGood()
@@ -150,7 +148,6 @@ public class NewBehaviourScript : MonoBehaviour
         statusStart = false;
         i++;
     }
-
     IEnumerator PlaySelectAudioNormal()
     {
         statusStart = true;
@@ -158,8 +155,9 @@ public class NewBehaviourScript : MonoBehaviour
         selectAudio.clip = normalSpeak;
         selectAudio.Play();
         yield return new WaitForSeconds(3);
+        statusStart = false;
+        i++;
     }
-
     IEnumerator PlaySelectAudioBad()
     {
         statusStart = true;
@@ -167,9 +165,10 @@ public class NewBehaviourScript : MonoBehaviour
         selectAudio.clip = badSpeak;
         selectAudio.Play();
         yield return new WaitForSeconds(4);
+        statusStart = false;
+        i++;
     }
 }
-
 ```
 ![изображение](https://user-images.githubusercontent.com/114138439/194693743-387e0bd3-e812-477d-9358-520fdbd2fad1.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/194693753-12ac1d2b-ac37-4b19-a5b6-c3d9a9ea9e6c.png)
@@ -178,13 +177,85 @@ public class NewBehaviourScript : MonoBehaviour
 ## Задание 2
 ### Реализовать запись в Google-таблицу набора данных, полученных с помощью линейной регрессии из лабораторной работы № 1. 
 
+Была проделана работа по аналогии с первым заданием: та же работа с Google-Console, создание Google-таблицы, написание определенного кода для вывода в таблицу значений. 
+PyCharm с кодом и полученными данными:
 
+![изображение](https://user-images.githubusercontent.com/114138439/194702938-af747164-fe92-4319-8413-b4db154fbcb0.png)
+
+Данные, записанные в таблицу совпадают с полученными данными в PyCharm:
+![изображение](https://user-images.githubusercontent.com/114138439/194703048-45620a1b-e275-47c9-8910-bfa0ae1711d4.png)
+
+Конечный код python:
+```
+import gspread
+import numpy as np
+import matplotlib.pyplot as plt
+gc = gspread.service_account(filename = 'unityda-lr-727e43d247c3.json')
+sh = gc.open('PythonFromLab1')
+
+x = [3, 21, 22, 34, 54, 34, 55, 67, 89, 99]
+x = np.array(x)
+
+y = [2, 22, 24, 65, 79, 82, 55, 130, 150, 199]
+y = np.array(y)
+
+plt.scatter(x, y)
+
+
+def model(a, b, x):
+    return a * x + b
+
+
+def loss_function(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    return (0.5 / num) * (np.square(prediction - y)).sum()
+
+
+def optimize(a, b, x, y):
+    num = len(x)
+    prediction = model(a, b, x)
+    da = (1.0 / num) * ((prediction - y) * x).sum()
+    db = (1.0 / num) * ((prediction - y).sum())
+    a = a - Lr * da
+    b = b - Lr * db
+    return a, b
+
+
+def iterate(a, b, x, y, times):
+    for i in range(times):
+        a, b = optimize(a, b, x, y)
+    return a, b
+
+
+a = np.random.rand(1)
+b = np.random.rand(1)
+Lr = 0.00001
+prev_loss = 0
+
+for i in range(1,11):
+    a, b = iterate(a, b, x, y, i)
+    prediction = model(a, b, x)
+    loss = loss_function(a, b, x, y)
+
+    temp_loss = loss_function(a, b, x, y)
+    l_difference = abs(temp_loss - prev_loss)
+    prev_loss = temp_loss
+
+    print(i, temp_loss, l_difference)
+    sh.sheet1.update(('A' + str(i)), str(i))
+    sh.sheet1.update(('B' + str(i)), str(temp_loss))
+    sh.sheet1.update(('C' + str(i)), str(l_difference))
+```
+
+## Задание 3
+### Самостоятельно разработать сценарий воспроизведения звукового сопровождения в Unity в зависимости от изменения считанных данных в задании 2.
 
 
 
 ## Выводы
 
-В процессе лабораторной работы я познакомилась с программными средствами для организации передачи данных между инструментами google, Python и Unity. 
+В процессе лабораторной работы я познакомилась с программными средствами для организации передачи данных между инструментами google, Python и Unity. Научилась записывать данные в Google Sheets посредством написания python кода, попрактиковалась в этом, выполнив это сначала последовательно с помощью видео, а затем  закрепила знания, сделав самостоятельно. Был написан функционал на Unity, в котором воспроизводятся аудио-файлы в зависимости от значения данных из таблицы.
 
 | Plugin | README |
 | ------ | ------ |
