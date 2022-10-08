@@ -67,18 +67,20 @@ while i <= len(mon):
         sh.sheet1.update(('C' + str(i)), tempInf)
         print(tempInf)
 ```
-![изображение](https://user-images.githubusercontent.com/114138439/194693609-5d92b346-b074-45c3-ab4d-4efa9680f655.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706203-65f6a9f3-45d5-44bc-b640-387b6f10867b.png)
+
 
 Google Sheets:
 
-![изображение](https://user-images.githubusercontent.com/114138439/194693633-cff2620f-7a53-461e-aa83-771e7ac7286a.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706215-e9521947-43da-48b7-8999-9e48a935a7ec.png)
+
 
 Значения в выводе PyCharm и в записи Google Sheets совпадают.
 
 Проект в Unity и начало работы в VS Code:
 
-![изображение](https://user-images.githubusercontent.com/114138439/194693654-0c0576c7-c380-4ee3-a499-0864b75b5610.png)
-![изображение](https://user-images.githubusercontent.com/114138439/194693658-2937ab64-4298-4011-bbd5-7bc967c31046.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706227-345ebfde-a788-40d7-ba3f-dc7628131313.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706233-d0c82a91-3cbf-4e22-a71e-074e7b289a60.png)
 
 Конечный код в VS Code:
 ```
