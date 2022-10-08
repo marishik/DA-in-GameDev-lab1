@@ -67,20 +67,22 @@ while i <= len(mon):
         sh.sheet1.update(('C' + str(i)), tempInf)
         print(tempInf)
 ```
-![изображение](https://user-images.githubusercontent.com/114138439/194706203-65f6a9f3-45d5-44bc-b640-387b6f10867b.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706327-d3bd0b92-6a9f-4943-a17f-48b4f51528fe.png)
 
 
 Google Sheets:
 
-![изображение](https://user-images.githubusercontent.com/114138439/194706215-e9521947-43da-48b7-8999-9e48a935a7ec.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706334-ee5ea914-b7f2-48d7-ae86-ff542bb3e62b.png)
+
 
 
 Значения в выводе PyCharm и в записи Google Sheets совпадают.
 
 Проект в Unity и начало работы в VS Code:
 
-![изображение](https://user-images.githubusercontent.com/114138439/194706227-345ebfde-a788-40d7-ba3f-dc7628131313.png)
-![изображение](https://user-images.githubusercontent.com/114138439/194706233-d0c82a91-3cbf-4e22-a71e-074e7b289a60.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706343-4ec641a1-53a9-4dad-b5e8-103c01701db5.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706345-366faf5e-863b-4839-94dc-0f5896a97b98.png)
+
 
 Конечный код в VS Code:
 ```
@@ -174,8 +176,12 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ```
-![изображение](https://user-images.githubusercontent.com/114138439/194693743-387e0bd3-e812-477d-9358-520fdbd2fad1.png)
-![изображение](https://user-images.githubusercontent.com/114138439/194693753-12ac1d2b-ac37-4b19-a5b6-c3d9a9ea9e6c.png)
+
+![изображение](https://user-images.githubusercontent.com/114138439/194706365-ca7a829b-e9f9-4857-86d6-33ec3faaee63.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706376-7b5b0a0f-95f5-4e8c-9bf9-c59f18590d19.png)
+![изображение](https://user-images.githubusercontent.com/114138439/194706419-d8b450b8-6081-4bd4-a1aa-95f8e8abe8e5.png)
+
+Значения в Google Sheets и в консоли Unity также совпадают.
 
 
 ## Задание 2
@@ -205,16 +211,13 @@ y = np.array(y)
 
 plt.scatter(x, y)
 
-
 def model(a, b, x):
     return a * x + b
-
 
 def loss_function(a, b, x, y):
     num = len(x)
     prediction = model(a, b, x)
     return (0.5 / num) * (np.square(prediction - y)).sum()
-
 
 def optimize(a, b, x, y):
     num = len(x)
@@ -225,12 +228,10 @@ def optimize(a, b, x, y):
     b = b - Lr * db
     return a, b
 
-
 def iterate(a, b, x, y, times):
     for i in range(times):
         a, b = optimize(a, b, x, y)
     return a, b
-
 
 a = np.random.rand(1)
 b = np.random.rand(1)
@@ -348,8 +349,6 @@ public class NewBehaviourScript : MonoBehaviour
     }
 }
 ```
-
-
 
 ## Выводы
 
