@@ -189,10 +189,6 @@ public class Perceptron : MonoBehaviour {
 
 ## Задание 2
 
-## Задание 3
-
-### 
-
 
 
 
