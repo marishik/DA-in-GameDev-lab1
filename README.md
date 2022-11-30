@@ -43,6 +43,7 @@
  Ход работы:
 1. Создала пустой объект в Unity
 2. Взяла предоставленный мне скрипт-файл с описанием работы перцептрона и "навесила" его на свой созданный пустой объект
+
 ![изображение](https://user-images.githubusercontent.com/114138439/204861848-5ddc296a-2935-4ed2-9c02-1f93db82fa27.png)
 
 ```
@@ -148,7 +149,9 @@ public class Perceptron : MonoBehaviour {
 }
 ```
 ***Логическая операция OR (ИЛИ)***
+
 Мною были установлены начальные значения:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/204868203-aab3489d-dc15-4ae2-8cc2-6e77ae2f61a8.png)
 
 Далее я проверяла обучаемость перцептрона, задавая разное количество эпох обучения. 
@@ -166,10 +169,13 @@ public class Perceptron : MonoBehaviour {
 
 
 ***Логическая операция AND (И)***
+
 Устанавливаем значения:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/204871505-f802fc8d-d7af-4f09-86e8-7a0350c54fcb.png)
 
 Обучаем перцептрон. Видим, что он обучился за 6 эпох:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/204871983-94a585af-f757-4bc4-bf7b-a023a75a4c77.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/204872080-15b3f8d9-3743-4304-b2ec-33a1d001ce6e.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/204872156-549cec69-0613-4246-853f-8d04e693b706.png)
