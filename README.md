@@ -86,10 +86,15 @@ behaviors:
     time_horizon: 64
     summary_freq: 10000
 ```
-![изображение](https://user-images.githubusercontent.com/114138439/204816423-480f655c-a881-4988-a0ac-25b1c1dc0a3c.png)
+![изображение](https://user-images.githubusercontent.com/114138439/204817503-598bb244-0561-4fb7-866b-78e79196c368.png)
 
+6. Сделала 3, 9, 27 копий модели «Плоскость-Сфера-Куб», запустила симуляцию сцены и смотрела за результатом обучения модели, чтобы сделать выводы
+![изображение](https://user-images.githubusercontent.com/114138439/204818600-68d94ffd-4163-4781-b606-4406145e28f7.png)
+![изображение](https://user-images.githubusercontent.com/114138439/204818700-77416773-eff0-4df9-a3d5-f71097ce1aa7.png)
+![изображение](https://user-images.githubusercontent.com/114138439/204819041-81c8aadb-ccc6-4100-93c9-be9c29ec3547.png)
 
 ## Задание 2
+### 
 
 ## Задание 3
 
