@@ -38,6 +38,13 @@
 
 
 ## Задание 1
+![изображение](https://user-images.githubusercontent.com/114138439/205098858-0350a796-68f9-415b-b706-ef33a639dab1.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205099011-97e3a4dc-fcbc-4fc0-8196-e00a122caa74.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205099098-0583c593-0bb2-4393-a30d-308f05d8ac0c.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205099231-7c31a2df-2b7d-43fd-a167-c1c1eed71f2c.png)
+
+
+![изображение](https://user-images.githubusercontent.com/114138439/205104221-26cabe39-23a9-4965-816c-c683165b2389.png)
 
 ```
 
