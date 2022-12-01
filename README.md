@@ -63,11 +63,12 @@
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205115471-9c380c8b-2f02-4ef7-bcd6-13b62d867564.png)
 
+измененные значения и обучение
+![изображение](https://user-images.githubusercontent.com/114138439/205117231-43d832ba-22c5-45cc-99fe-a36b696d132b.png)
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205116248-d6233bba-c67c-44b8-a570-8c104bcd14af.png)
 
-измененные значения и обучение
-![изображение](https://user-images.githubusercontent.com/114138439/205117231-43d832ba-22c5-45cc-99fe-a36b696d132b.png)
+
 
 
 
