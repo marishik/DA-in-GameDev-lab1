@@ -53,6 +53,22 @@
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205112218-247caae5-c310-467d-83b4-c6a93e9a7396.png)
 
+![изображение](https://user-images.githubusercontent.com/114138439/205112497-13903a8c-1807-40eb-b3fc-74aa17e288bd.png)
+
+Начальные значения 
+![изображение](https://user-images.githubusercontent.com/114138439/205114699-f05323a0-92ff-49f3-b7a7-a5e9c941c00d.png)
+
+![изображение](https://user-images.githubusercontent.com/114138439/205115471-9c380c8b-2f02-4ef7-bcd6-13b62d867564.png)
+
+
+![изображение](https://user-images.githubusercontent.com/114138439/205116248-d6233bba-c67c-44b8-a570-8c104bcd14af.png)
+
+измененные значения и обучение
+![изображение](https://user-images.githubusercontent.com/114138439/205117231-43d832ba-22c5-45cc-99fe-a36b696d132b.png)
+
+
+
+
 ```
 
 ```
