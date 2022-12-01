@@ -227,27 +227,37 @@ mlagents-learn Economic.yaml --run-id=Economic –force
 ![изображение](https://user-images.githubusercontent.com/114138439/205104221-26cabe39-23a9-4965-816c-c683165b2389.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/205108916-6a1c6d10-84d4-4bd5-9bcc-21cf70b1659c.png)
 
-
+6. Установка TensorBoard:
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205110687-54b57ddf-7b4a-4053-8e12-785a502be155.png)
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205110575-619f54b5-299f-4d15-b84e-126df0c3b7c3.png)
 
+7. Запуск TensorBoard c помощью команды tensorboard --logdir=results
 ![изображение](https://user-images.githubusercontent.com/114138439/205112218-247caae5-c310-467d-83b4-c6a93e9a7396.png)
 
-Начальные значения 
+8. Начальные значения и графики при начальных значениях:
+
 ![изображение](https://user-images.githubusercontent.com/114138439/205114699-f05323a0-92ff-49f3-b7a7-a5e9c941c00d.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/205112497-13903a8c-1807-40eb-b3fc-74aa17e288bd.png)
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205125113-b3124b74-c554-41fb-af38-7c96cae1865f.png)
 
 
-
+9. Изменила значения в коде, на скринах процесс обучения и новый запуск TensorBoard:
 ![изображение](https://user-images.githubusercontent.com/114138439/205115471-9c380c8b-2f02-4ef7-bcd6-13b62d867564.png)
 
-измененные значения и обучение
 ![изображение](https://user-images.githubusercontent.com/114138439/205117231-43d832ba-22c5-45cc-99fe-a36b696d132b.png)
 
+Я изменяла два параметра файла:
+```
+learning_rate: 2.0e-4
+epsilon: 0.3
+```
+
+Learning_rate - начальная скорость обучения для градиентного спуска. Изменилась длина эпизода, так как мы поменяли этот параметр
+
+Epsilon влияет на быстроту изменения поведения во время обучения. Установка небольшого значения этого параметра приведет к более стабильным обновлениям, но также замедлит процесс обучения. Я повысила значение этого параметра, соответсвенно скорость обучения у меня увеличилась
 ![изображение](https://user-images.githubusercontent.com/114138439/205116248-d6233bba-c67c-44b8-a570-8c104bcd14af.png)
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205125824-e158955d-86b6-49b8-a08e-5263d6ec6ca7.png)
