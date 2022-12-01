@@ -45,6 +45,13 @@
 
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205104221-26cabe39-23a9-4965-816c-c683165b2389.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205108916-6a1c6d10-84d4-4bd5-9bcc-21cf70b1659c.png)
+
+![изображение](https://user-images.githubusercontent.com/114138439/205110687-54b57ddf-7b4a-4053-8e12-785a502be155.png)
+
+![изображение](https://user-images.githubusercontent.com/114138439/205110575-619f54b5-299f-4d15-b84e-126df0c3b7c3.png)
+
+![изображение](https://user-images.githubusercontent.com/114138439/205112218-247caae5-c310-467d-83b4-c6a93e9a7396.png)
 
 ```
 
