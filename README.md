@@ -176,16 +176,49 @@ public class Perceptron : MonoBehaviour {
 
 ![изображение](https://user-images.githubusercontent.com/114138439/204871505-f802fc8d-d7af-4f09-86e8-7a0350c54fcb.png)
 
-Обучаем перцептрон. Видим, что он обучился за 6 эпох:
+Обучаем перцептрон. Видим, что он обучился за 7 эпох:
 
-![изображение](https://user-images.githubusercontent.com/114138439/204871983-94a585af-f757-4bc4-bf7b-a023a75a4c77.png)
-![изображение](https://user-images.githubusercontent.com/114138439/204872080-15b3f8d9-3743-4304-b2ec-33a1d001ce6e.png)
-![изображение](https://user-images.githubusercontent.com/114138439/204872156-549cec69-0613-4246-853f-8d04e693b706.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205033198-b2767ed0-c7d1-42e6-a94d-b1a32470ab84.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205033309-e890deff-5139-4c73-b195-01ccd690e503.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205033416-e2c69d20-1c9e-490d-aff3-f530b9ba79b6.png)
+
+Проверяем корректность работы на тесты:
+
+![изображение](https://user-images.githubusercontent.com/114138439/205033562-23eb49ce-2891-4032-93e6-e7cd85636499.png)
+
+Видим, что перцептрон обучен успешно и работает корректно.
 
 
-***Логическая операция NAND (ОТРИЦАНИЕ КОНЪЮНКЦИИ)***
+***Логическая операция NAND (ОТРИЦАНИЕ КОНЪЮНКЦИИ (AND))***
+
+Устанавливаем значения на выход и на выход:
+
+![изображение](https://user-images.githubusercontent.com/114138439/205033998-a356b2b2-3f41-4490-84e0-226cb4884ab6.png)
+
+
+Обучаем:
+
+![изображение](https://user-images.githubusercontent.com/114138439/205035129-c53c1641-5136-4bcb-b80f-4d4f2fbb54c7.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205035266-11c81018-c538-4f6c-9869-3c67102d1b7b.png)
+![изображение](https://user-images.githubusercontent.com/114138439/205035340-5a5a709d-6478-4692-853a-0e0ed99cd681.png)
+
+Видим, что перцептрон достиг Total Error = 0 за 6 эпох, и что тесты прошел, всё отработано корректно
+
 
 ***Логическая операция XOR (ИСКЛЮЧАЮЩЕЕ ИЛИ)***
+
+Установила значения:
+
+![изображение](https://user-images.githubusercontent.com/114138439/205036444-83d4966a-e8db-41e3-8b92-7b2a1ebd4e41.png)
+
+Пыталась обучить на разном количестве эпох, но Total Error не становился нулем ни при каких заданных значениях Train(...)
+
+Результаты при 5, 10, 50 эпохах соответственно:
+
+![изображение](https://user-images.githubusercontent.com/114138439/205037042-47d03576-26cf-4e4c-bded-0e32db63d40e.png)  ![изображение](https://user-images.githubusercontent.com/114138439/205037234-d7ddeedf-6bbd-42cc-bb47-7e6b5e644959.png)
+   ![изображение](https://user-images.githubusercontent.com/114138439/205037383-f23aed6c-da2a-43af-a988-6a1d20c6afc5.png)
+
+
 
 ## Задание 2
 
