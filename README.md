@@ -198,8 +198,8 @@ public class Move : Agent
 ```
 3. Запустила Anaconda Promt и написала в него ряд команд:
 ```
-conda create -n MLAgents python=3.6
-conda activate MLAgents
+conda create -n TestAgent python=3.6.13
+conda activate TestAgent
 ```
 
 ```
@@ -216,7 +216,8 @@ pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
 ![изображение](https://user-images.githubusercontent.com/114138439/205099231-7c31a2df-2b7d-43fd-a167-c1c1eed71f2c.png)
 
 
-
+4. В папке проекта есть Economic:
+![изображение](https://user-images.githubusercontent.com/114138439/205126502-51011dac-8b5e-45bb-b97e-beee7977c4c3.png)
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205104221-26cabe39-23a9-4965-816c-c683165b2389.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/205108916-6a1c6d10-84d4-4bd5-9bcc-21cf70b1659c.png)
