@@ -218,7 +218,7 @@ public class Perceptron : MonoBehaviour {
 ![изображение](https://user-images.githubusercontent.com/114138439/205037042-47d03576-26cf-4e4c-bded-0e32db63d40e.png)  ![изображение](https://user-images.githubusercontent.com/114138439/205037234-d7ddeedf-6bbd-42cc-bb47-7e6b5e644959.png)
    ![изображение](https://user-images.githubusercontent.com/114138439/205037383-f23aed6c-da2a-43af-a988-6a1d20c6afc5.png)
 
-
+Из полученных результатов можно сделать вывод, что XOR не линейно-разделимый, поэтому с помощью одного перцептрона выполнить эту задачу невозможно и необходимо добавить еще слой нейронов.
 
 ## Задание 2
 
