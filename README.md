@@ -219,9 +219,14 @@ pip install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
 4. В папке проекта есть Economic:
 ![изображение](https://user-images.githubusercontent.com/114138439/205126502-51011dac-8b5e-45bb-b97e-beee7977c4c3.png)
 
+5. Запустила обучение ML-Agent с помощью команды:
+```
+mlagents-learn Economic.yaml --run-id=Economic –force
+```
+запустила сцену Unity, и убедилась, что все работает корректно, потому что увидела сообщение о считывании
 ![изображение](https://user-images.githubusercontent.com/114138439/205104221-26cabe39-23a9-4965-816c-c683165b2389.png)
 ![изображение](https://user-images.githubusercontent.com/114138439/205108916-6a1c6d10-84d4-4bd5-9bcc-21cf70b1659c.png)
-![изображение](https://user-images.githubusercontent.com/114138439/205126502-51011dac-8b5e-45bb-b97e-beee7977c4c3.png)
+
 
 
 ![изображение](https://user-images.githubusercontent.com/114138439/205110687-54b57ddf-7b4a-4053-8e12-785a502be155.png)
