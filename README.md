@@ -190,3 +190,6 @@ plt.plot(x, prediction)
 | OneDrive | [plugins/onedrive/README.md][PlOd] |
 | Medium | [plugins/medium/README.md][PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
+![изображение](https://user-images.githubusercontent.com/114138439/227786690-f7e0ad25-cd65-47e0-abb0-7a606a5006aa.png)
+
